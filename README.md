@@ -83,6 +83,3 @@ This build stays honest:
 Author:
 **Viorel Ciprian Brisc**  
 https://www.limit.ro/viorel-brisc.html
-
-Schema entity id:
-`https://www.limit.ro/viorel-brisc.html#person`
