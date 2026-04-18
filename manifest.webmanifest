@@ -1,0 +1,16 @@
+{
+  "name": "GraphKiln",
+  "short_name": "GraphKiln",
+  "description": "Browser-native local-first graph reasoning workspace.",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#09101b",
+  "theme_color": "#101b33",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

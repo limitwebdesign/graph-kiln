@@ -1,0 +1,463 @@
+{
+  "id": "40f47e9e-4172-436c-ba21-96c0f95d2034",
+  "title": "GraphKiln // Atlas Alpha",
+  "nodes": [
+    {
+      "id": "0882e397-30e4-4e7d-bdbf-d9909bce8f6e",
+      "kind": "note",
+      "title": "Local-first manifesto",
+      "content": "Keep the primary copy on-device. Sync later. Preserve ownership, privacy, offline progress, and merge history.",
+      "tags": [
+        "note",
+        "local",
+        "first",
+        "manifesto",
+        "keep"
+      ],
+      "x": 120,
+      "y": 120,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.290Z",
+      "updatedAt": "2026-04-18T14:33:34.290Z",
+      "lamport": 1
+    },
+    {
+      "id": "89df83d8-cc27-4ace-a034-230334a9cc0c",
+      "kind": "code",
+      "title": "WebGPU compute kernels",
+      "content": "WGSL kernels for similarity matrices, graph layout experiments, and visual compute passes.",
+      "tags": [
+        "code",
+        "webgpu",
+        "compute",
+        "kernels",
+        "wgsl"
+      ],
+      "x": 480,
+      "y": 90,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 2
+    },
+    {
+      "id": "b885d121-91c1-4418-b513-28c9fb7f65ee",
+      "kind": "entity",
+      "title": "Research cockpit",
+      "content": "One workspace for strategy notes, evidence boards, snippets, screenshots, and active questions.",
+      "tags": [
+        "entity",
+        "research",
+        "cockpit",
+        "one",
+        "workspace"
+      ],
+      "x": 860,
+      "y": 140,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 3
+    },
+    {
+      "id": "78168cba-135f-4778-bef7-4bb053c2a5d2",
+      "kind": "note",
+      "title": "Conflict-free merge log",
+      "content": "Append-only local operations with deterministic merge rules for imported workspaces and later sync.",
+      "tags": [
+        "note",
+        "conflict",
+        "free",
+        "merge",
+        "log"
+      ],
+      "x": 150,
+      "y": 430,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 4
+    },
+    {
+      "id": "e84426f6-0bd9-43e9-99c0-3155efe819c8",
+      "kind": "link",
+      "title": "Signal Atlas concept",
+      "content": "Graph ingest for entities, notes, files, and code references.",
+      "url": "https://www.limit.ro/ecosistem.html",
+      "tags": [
+        "link",
+        "signal",
+        "atlas",
+        "concept",
+        "graph",
+        "limit.ro"
+      ],
+      "x": 520,
+      "y": 420,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 5
+    },
+    {
+      "id": "cb9295d1-09c2-4dec-8f55-db204c7df3a7",
+      "kind": "code",
+      "title": "Transformers adapter hook",
+      "content": "Optional browser adapter for on-device summarization and embeddings when a model runtime is available.",
+      "tags": [
+        "code",
+        "transformers",
+        "adapter",
+        "hook",
+        "optional"
+      ],
+      "x": 900,
+      "y": 420,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 6
+    },
+    {
+      "id": "215d3743-b11b-4856-b1b4-2c5672041167",
+      "kind": "note",
+      "title": "Quant signal notebook",
+      "content": "Local-first reasoning surface for ranking signals, scenarios, constraints, and execution paths.",
+      "tags": [
+        "note",
+        "quant",
+        "signal",
+        "notebook",
+        "local"
+      ],
+      "x": 1240,
+      "y": 140,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 7
+    },
+    {
+      "id": "cea2ccdf-b07a-4a64-8b17-233ca6f2a42f",
+      "kind": "image",
+      "title": "Screenshot node",
+      "content": "Visual evidence can live next to code, links, and thesis notes.",
+      "imageData": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='480' height='280' viewBox='0 0 480 280'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%23152a52'/><stop offset='1' stop-color='%23070d18'/></linearGradient></defs><rect width='480' height='280' rx='22' fill='url(%23g)'/><circle cx='80' cy='74' r='22' fill='%236ea8fe' fill-opacity='0.85'/><rect x='134' y='58' width='228' height='20' rx='10' fill='white' fill-opacity='0.14'/><rect x='46' y='126' width='388' height='16' rx='8' fill='white' fill-opacity='0.1'/><rect x='46' y='154' width='276' height='16' rx='8' fill='white' fill-opacity='0.08'/><rect x='46' y='196' width='168' height='42' rx='14' fill='%236ea8fe' fill-opacity='0.9'/></svg>",
+      "tags": [
+        "image",
+        "screenshot",
+        "node",
+        "visual",
+        "evidence"
+      ],
+      "x": 1240,
+      "y": 430,
+      "width": 250,
+      "height": 220,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 8
+    },
+    {
+      "id": "c6603472-ea0e-43ee-9992-08e81d3cd137",
+      "kind": "entity",
+      "title": "Evidence board",
+      "content": "Legal notes, due diligence trails, SEO entity graphs, and investment memos can live in the same surface.",
+      "tags": [
+        "entity",
+        "evidence",
+        "board",
+        "legal",
+        "notes"
+      ],
+      "x": 1600,
+      "y": 280,
+      "width": 250,
+      "height": 170,
+      "createdAt": "2026-04-18T14:33:34.294Z",
+      "updatedAt": "2026-04-18T14:33:34.294Z",
+      "lamport": 9
+    }
+  ],
+  "edges": [],
+  "clusters": [],
+  "actions": [
+    {
+      "id": "3b768615-3760-40b3-97af-21ba85609942",
+      "type": "add-node",
+      "summary": "Added Local-first manifesto",
+      "ts": "2026-04-18T14:33:34.290Z",
+      "lamport": 1,
+      "payload": {
+        "node": {
+          "id": "0882e397-30e4-4e7d-bdbf-d9909bce8f6e",
+          "kind": "note",
+          "title": "Local-first manifesto",
+          "content": "Keep the primary copy on-device. Sync later. Preserve ownership, privacy, offline progress, and merge history.",
+          "tags": [
+            "note",
+            "local",
+            "first",
+            "manifesto",
+            "keep"
+          ],
+          "x": 120,
+          "y": 120,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.290Z",
+          "updatedAt": "2026-04-18T14:33:34.290Z",
+          "lamport": 1
+        }
+      }
+    },
+    {
+      "id": "8c508d2b-0651-4ebf-aaed-8fde8d4af543",
+      "type": "add-node",
+      "summary": "Added WebGPU compute kernels",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 2,
+      "payload": {
+        "node": {
+          "id": "89df83d8-cc27-4ace-a034-230334a9cc0c",
+          "kind": "code",
+          "title": "WebGPU compute kernels",
+          "content": "WGSL kernels for similarity matrices, graph layout experiments, and visual compute passes.",
+          "tags": [
+            "code",
+            "webgpu",
+            "compute",
+            "kernels",
+            "wgsl"
+          ],
+          "x": 480,
+          "y": 90,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 2
+        }
+      }
+    },
+    {
+      "id": "7b9f494f-6d2f-46d4-ac15-947c83100751",
+      "type": "add-node",
+      "summary": "Added Research cockpit",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 3,
+      "payload": {
+        "node": {
+          "id": "b885d121-91c1-4418-b513-28c9fb7f65ee",
+          "kind": "entity",
+          "title": "Research cockpit",
+          "content": "One workspace for strategy notes, evidence boards, snippets, screenshots, and active questions.",
+          "tags": [
+            "entity",
+            "research",
+            "cockpit",
+            "one",
+            "workspace"
+          ],
+          "x": 860,
+          "y": 140,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 3
+        }
+      }
+    },
+    {
+      "id": "a4a14cb8-fb63-4877-b101-258ce323c22b",
+      "type": "add-node",
+      "summary": "Added Conflict-free merge log",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 4,
+      "payload": {
+        "node": {
+          "id": "78168cba-135f-4778-bef7-4bb053c2a5d2",
+          "kind": "note",
+          "title": "Conflict-free merge log",
+          "content": "Append-only local operations with deterministic merge rules for imported workspaces and later sync.",
+          "tags": [
+            "note",
+            "conflict",
+            "free",
+            "merge",
+            "log"
+          ],
+          "x": 150,
+          "y": 430,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 4
+        }
+      }
+    },
+    {
+      "id": "acc22c88-65f8-4082-90cd-f3d357f9115c",
+      "type": "add-node",
+      "summary": "Added Signal Atlas concept",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 5,
+      "payload": {
+        "node": {
+          "id": "e84426f6-0bd9-43e9-99c0-3155efe819c8",
+          "kind": "link",
+          "title": "Signal Atlas concept",
+          "content": "Graph ingest for entities, notes, files, and code references.",
+          "url": "https://www.limit.ro/ecosistem.html",
+          "tags": [
+            "link",
+            "signal",
+            "atlas",
+            "concept",
+            "graph",
+            "limit.ro"
+          ],
+          "x": 520,
+          "y": 420,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 5
+        }
+      }
+    },
+    {
+      "id": "da3f2bf4-394f-4b44-b989-5beeecea8270",
+      "type": "add-node",
+      "summary": "Added Transformers adapter hook",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 6,
+      "payload": {
+        "node": {
+          "id": "cb9295d1-09c2-4dec-8f55-db204c7df3a7",
+          "kind": "code",
+          "title": "Transformers adapter hook",
+          "content": "Optional browser adapter for on-device summarization and embeddings when a model runtime is available.",
+          "tags": [
+            "code",
+            "transformers",
+            "adapter",
+            "hook",
+            "optional"
+          ],
+          "x": 900,
+          "y": 420,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 6
+        }
+      }
+    },
+    {
+      "id": "b4e9bd5d-28f2-4f86-9215-423830f3c7b8",
+      "type": "add-node",
+      "summary": "Added Quant signal notebook",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 7,
+      "payload": {
+        "node": {
+          "id": "215d3743-b11b-4856-b1b4-2c5672041167",
+          "kind": "note",
+          "title": "Quant signal notebook",
+          "content": "Local-first reasoning surface for ranking signals, scenarios, constraints, and execution paths.",
+          "tags": [
+            "note",
+            "quant",
+            "signal",
+            "notebook",
+            "local"
+          ],
+          "x": 1240,
+          "y": 140,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 7
+        }
+      }
+    },
+    {
+      "id": "7f3a6834-39a0-4ed9-be08-88f0f20b6646",
+      "type": "add-node",
+      "summary": "Added Screenshot node",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 8,
+      "payload": {
+        "node": {
+          "id": "cea2ccdf-b07a-4a64-8b17-233ca6f2a42f",
+          "kind": "image",
+          "title": "Screenshot node",
+          "content": "Visual evidence can live next to code, links, and thesis notes.",
+          "imageData": "data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='480' height='280' viewBox='0 0 480 280'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop stop-color='%23152a52'/><stop offset='1' stop-color='%23070d18'/></linearGradient></defs><rect width='480' height='280' rx='22' fill='url(%23g)'/><circle cx='80' cy='74' r='22' fill='%236ea8fe' fill-opacity='0.85'/><rect x='134' y='58' width='228' height='20' rx='10' fill='white' fill-opacity='0.14'/><rect x='46' y='126' width='388' height='16' rx='8' fill='white' fill-opacity='0.1'/><rect x='46' y='154' width='276' height='16' rx='8' fill='white' fill-opacity='0.08'/><rect x='46' y='196' width='168' height='42' rx='14' fill='%236ea8fe' fill-opacity='0.9'/></svg>",
+          "tags": [
+            "image",
+            "screenshot",
+            "node",
+            "visual",
+            "evidence"
+          ],
+          "x": 1240,
+          "y": 430,
+          "width": 250,
+          "height": 220,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 8
+        }
+      }
+    },
+    {
+      "id": "79783cc2-ceaa-45d7-8e19-8ed35f98c96a",
+      "type": "add-node",
+      "summary": "Added Evidence board",
+      "ts": "2026-04-18T14:33:34.294Z",
+      "lamport": 9,
+      "payload": {
+        "node": {
+          "id": "c6603472-ea0e-43ee-9992-08e81d3cd137",
+          "kind": "entity",
+          "title": "Evidence board",
+          "content": "Legal notes, due diligence trails, SEO entity graphs, and investment memos can live in the same surface.",
+          "tags": [
+            "entity",
+            "evidence",
+            "board",
+            "legal",
+            "notes"
+          ],
+          "x": 1600,
+          "y": 280,
+          "width": 250,
+          "height": 170,
+          "createdAt": "2026-04-18T14:33:34.294Z",
+          "updatedAt": "2026-04-18T14:33:34.294Z",
+          "lamport": 9
+        }
+      }
+    }
+  ],
+  "meta": {
+    "createdAt": "2026-04-18T14:33:34.294Z",
+    "updatedAt": "2026-04-18T14:33:34.294Z",
+    "lamport": 9,
+    "version": "10.0.0"
+  }
+}

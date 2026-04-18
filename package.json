@@ -1,0 +1,34 @@
+{
+  "name": "graph-kiln",
+  "version": "0.11.0",
+  "description": "Browser-native local-first graph reasoning workspace with offline storage, WebAssembly scoring, worker clustering, replay, and optional WebGPU compute.",
+  "type": "module",
+  "author": {
+    "name": "Viorel Ciprian Brisc",
+    "url": "https://www.limit.ro/viorel-brisc.html"
+  },
+  "homepage": "https://github.com/limitwebdesign/graph-kiln",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limitwebdesign/graph-kiln.git"
+  },
+  "bugs": {
+    "url": "https://github.com/limitwebdesign/graph-kiln/issues"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "serve": "python -m http.server 8080",
+    "test": "node tests/smoke.mjs"
+  },
+  "keywords": [
+    "local-first",
+    "webassembly",
+    "webgpu",
+    "graph",
+    "workspace",
+    "offline-first",
+    "browser",
+    "reasoning"
+  ],
+  "license": "MIT"
+}

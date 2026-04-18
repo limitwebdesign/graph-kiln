@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>GraphKiln | Browser-native local-first graph reasoning workspace</title>
+  <meta name="description" content="GraphKiln is a browser-native local-first graph reasoning workspace for notes, links, code, screenshots, replay, and browser compute experiments.">
+  <meta property="og:title" content="GraphKiln">
+  <meta property="og:description" content="Browser-native local-first graph reasoning workspace.">
+  <meta property="og:type" content="website">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" href="./assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles/main.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "GraphKiln",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web Browser",
+    "description": "Browser-native local-first graph reasoning workspace with offline storage, replay, WebAssembly scoring, and optional WebGPU compute.",
+    "codeRepository": "https://github.com/limitwebdesign/graph-kiln",
+    "author": {
+      "@type": "Person",
+      "@id": "https://www.limit.ro/viorel-brisc.html#person",
+      "name": "Viorel Ciprian Brisc",
+      "url": "https://www.limit.ro/viorel-brisc.html"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img src="./assets/icon.svg" alt="GraphKiln icon" class="brand__icon">
+      <div>
+        <h1>GraphKiln</h1>
+        <p>Local-first graph reasoning workspace</p>
+      </div>
+    </div>
+
+    <div class="topbar__controls">
+      <input id="workspaceTitle" class="workspace-title-input" value="GraphKiln // Atlas Alpha" aria-label="Workspace title">
+      <input id="searchInput" type="search" placeholder="Search nodes, tags, domains…">
+      <button id="analyzeWorkspace">Analyze</button>
+      <button id="layoutWorkspace">Auto layout</button>
+      <button id="replayWorkspace">Replay</button>
+      <button id="exportWorkspace">Export</button>
+      <button id="importWorkspace">Import</button>
+      <button id="loadSample">Sample</button>
+      <button id="clearWorkspace" class="button--danger">Clear</button>
+      <input id="importInput" type="file" accept="application/json" hidden>
+    </div>
+  </header>
+
+  <main class="shell">
+    <aside class="panel panel--left">
+      <section class="card">
+        <h2>Ingest node</h2>
+        <form id="nodeForm" class="stack">
+          <label>
+            <span>Type</span>
+            <select id="nodeKind">
+              <option value="note">Note</option>
+              <option value="link">Link</option>
+              <option value="code">Code</option>
+              <option value="image">Image</option>
+              <option value="entity">Entity</option>
+            </select>
+          </label>
+
+          <label>
+            <span>Title</span>
+            <input id="nodeTitle" required placeholder="E.g. Search quality memo">
+          </label>
+
+          <label>
+            <span>Content</span>
+            <textarea id="nodeContent" rows="6" placeholder="Drop notes, code, snippets, questions, or hypotheses."></textarea>
+          </label>
+
+          <label>
+            <span>URL</span>
+            <input id="nodeUrl" placeholder="https://…">
+          </label>
+
+          <label>
+            <span>Image file</span>
+            <input id="nodeFile" type="file" accept="image/*">
+          </label>
+
+          <button type="submit">Create node</button>
+        </form>
+      </section>
+
+      <section class="card">
+        <h2>Workspace summary</h2>
+        <p id="workspaceSummary" class="muted"></p>
+        <ul class="stats">
+          <li><strong id="statsNodes">0</strong><span>nodes</span></li>
+          <li><strong id="statsEdges">0</strong><span>links</span></li>
+          <li><strong id="statsClusters">0</strong><span>clusters</span></li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Suggestions</h2>
+        <ul id="suggestionList" class="bullet-list"></ul>
+      </section>
+    </aside>
+
+    <section class="workspace">
+      <div class="workspace__meta">
+        <div id="statusLine">Booting GraphKiln…</div>
+        <div class="workspace__chips">
+          <span>Graph canvas</span>
+          <span>Offline-first</span>
+          <span>WASM scoring</span>
+          <span>Replay log</span>
+        </div>
+      </div>
+
+      <div class="workspace__viewport">
+        <svg id="edgeLayer" class="edge-layer" width="2400" height="1800" viewBox="0 0 2400 1800" aria-hidden="true"></svg>
+        <div id="nodeLayer" class="node-layer" aria-label="GraphKiln graph workspace"></div>
+      </div>
+    </section>
+
+    <aside class="panel panel--right">
+      <section class="card">
+        <h2>Inspector</h2>
+        <div class="stack">
+          <label>
+            <span>Title</span>
+            <input id="selectedTitle" placeholder="Select a node">
+          </label>
+          <label>
+            <span>Type</span>
+            <select id="selectedKind">
+              <option value="note">Note</option>
+              <option value="link">Link</option>
+              <option value="code">Code</option>
+              <option value="image">Image</option>
+              <option value="entity">Entity</option>
+            </select>
+          </label>
+          <label>
+            <span>Content</span>
+            <textarea id="selectedContent" rows="6"></textarea>
+          </label>
+          <label>
+            <span>URL</span>
+            <input id="selectedUrl" placeholder="https://…">
+          </label>
+          <label>
+            <span>Tags</span>
+            <input id="selectedTags" placeholder="tag1, tag2, tag3">
+          </label>
+          <div class="button-row">
+            <button id="selectedSave">Save node</button>
+            <button id="selectedDelete" class="button--danger">Delete</button>
+          </div>
+          <p id="selectedMeta" class="muted"></p>
+          <p id="selectedSummary" class="muted"></p>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Clusters</h2>
+        <div id="clusterList" class="stack"></div>
+      </section>
+
+      <section class="card">
+        <h2>Compute + runtime</h2>
+        <ul id="capabilities" class="bullet-list"></ul>
+        <div class="button-row">
+          <button id="runGpuBenchmark">Run WebGPU benchmark</button>
+        </div>
+        <p id="gpuResult" class="muted">Benchmark idle.</p>
+        <h3>WASM related nodes</h3>
+        <ul id="relatedList" class="bullet-list"></ul>
+      </section>
+
+      <section class="card">
+        <h2>Activity log</h2>
+        <ul id="activityList" class="activity-list"></ul>
+      </section>
+    </aside>
+  </main>
+
+  <script type="module" src="./app/main.js"></script>
+</body>
+</html>
