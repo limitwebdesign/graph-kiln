@@ -51,17 +51,6 @@ tsc -p tsconfig.json
 node tests/smoke.mjs
 ```
 
-## Recommended GitHub setup
-
-Repository name:
-`graph-kiln`
-
-Description:
-`Browser-native local-first graph reasoning workspace with offline storage, WebAssembly scoring, worker clustering, replay, and optional WebGPU compute.`
-
-Topics:
-`local-first, webassembly, webgpu, graph, workspace, browser, offline-first`
-
 ## Runtime notes
 
 - Works without a backend
